@@ -1,0 +1,44 @@
+.circleNOANIM {
+    margin-top: 3rem;
+    box-sizing: border-box;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    padding-left: 50px;
+    background-image: linear-gradient(to left, #ffffff, #fff 50%, #000 50%, #000000);
+}
+
+.yinyangNOANIM {
+    position: relative;
+    background: #fff;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: linear-gradient(to left, #ffffff, #fff 50%, #000 50%, #000000);
+}
+
+.yinyangNOANIM:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translatex(-50%);
+    background: #fff;
+    border: 18px solid #000;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+}
+
+.yinyangNOANIM:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translatex(-50%);
+    background: #000;
+    border: 18px solid #fff;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+}

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Playground</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="style_not_animated.css" rel="stylesheet">
+    <link href="style_red_circles.css" rel="stylesheet">
+    <link href="style_yinyan_creation.css" rel="stylesheet">
+</head>
+<body>
+<div>
+
+
+    <p>Step one is creating a circle, divided in half black and white using <code>background-image: linear-gradient(to left, #ffffff, #fff 50%, #000 50%, #000000);</code></p>
+
+    <div class="yinyangNOANIMstepOne"></div>
+
+    <p>Step two is using the <code>:before</code> tag to draw a small white circle inside this circle with a THICK black border</p>
+    <div class="yinyangNOANIMstepTwo"></div>
+
+    <p>Step three is pretty much the same, using the <code>:after</code> tag to draw a small black circle with a THICK white border</p>
+    <div class="yinyangNOANIMstepThree"></div>
+
+    <p>P.S.: translateX + top/left is used to place the circles in the correct position</p>
+
+
+    <p>Now we make THE BIG circle again divided in half black white</p>
+    <div class="circleNOANIM"></div>
+
+    <p>Then we place the mini two times on it</p>
+    <div class="circleNOANIM">
+        <div class="yinyangNOANIM"></div>
+        <div class="yinyangNOANIM"></div>
+    </div>
+
+    <p>Add the animation <code>    animation: roll 10s infinite; </code> & <code>@keyframes roll {
+        from {
+        transform:rotate(0deg);
+        }
+        to {
+        transform:rotate(-360deg);
+        }
+        }</code> and...</p>
+    <div class="circlered">
+        <div class="yinyangred"></div>
+        <div class="yinyangred"></div>
+    </div>
+
+    <p>VOILA!</p>
+    <div class="circle">
+        <div class="yinyang"></div>
+        <div class="yinyang"></div>
+    </div>
+
+
+</div>
+
+</body>
+</html>
