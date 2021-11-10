@@ -8,6 +8,26 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.centerDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #efefef;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.childFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}
+
 
 .circle {
     margin-top: 3rem;

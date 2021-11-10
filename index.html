@@ -12,50 +12,59 @@
     <link href="style_yinyan_creation.css" rel="stylesheet">
 </head>
 <body>
-<div>
+<div class="centerDiv">
 
-
-    <p>Step one is creating a circle, divided in half black and white using <code>background-image: linear-gradient(to left, #ffffff, #fff 50%, #000 50%, #000000);</code></p>
-
-    <div class="yinyangNOANIMstepOne"></div>
-
-    <p>Step two is using the <code>:before</code> tag to draw a small white circle inside this circle with a THICK black border</p>
-    <div class="yinyangNOANIMstepTwo"></div>
-
-    <p>Step three is pretty much the same, using the <code>:after</code> tag to draw a small black circle with a THICK white border</p>
-    <div class="yinyangNOANIMstepThree"></div>
-
-    <p>P.S.: translateX + top/left is used to place the circles in the correct position</p>
-
-
-    <p>Now we make THE BIG circle again divided in half black white</p>
-    <div class="circleNOANIM"></div>
-
-    <p>Then we place the mini two times on it</p>
-    <div class="circleNOANIM">
-        <div class="yinyangNOANIM"></div>
-        <div class="yinyangNOANIM"></div>
+    <div class="childFlex">
+        <p>Step one is creating a circle, divided in half black and white using <code>background-image:
+            linear-gradient(to left, #ffffff, #fff 50%, #000 50%, #000000);</code></p>
+        <div class="yinyangNOANIMstepOne"></div>
     </div>
-
-    <p>Add the animation <code>    animation: roll 10s infinite; </code> & <code>@keyframes roll {
-        from {
-        transform:rotate(0deg);
-        }
-        to {
-        transform:rotate(-360deg);
-        }
-        }</code> and...</p>
-    <div class="circlered">
-        <div class="yinyangred"></div>
-        <div class="yinyangred"></div>
+    <div class="childFlex">
+        <p>Step two is using the <code>:before</code> tag to draw a small white circle inside this circle with a THICK
+            black border</p>
+        <div class="yinyangNOANIMstepTwo"></div>
     </div>
-
-    <p>VOILA!</p>
-    <div class="circle">
-        <div class="yinyang"></div>
-        <div class="yinyang"></div>
+    <div class="childFlex">
+        <p>Step three is pretty much the same, using the <code>:after</code> tag to draw a small black circle with a
+            THICK white border</p>
+        <div class="yinyangNOANIMstepThree"></div>
     </div>
+    <div class="childFlex">
+        <p>P.S.: translateX + top/left is used to place the circles in the correct position</p>
+    </div>
+    <div class="childFlex">
 
+        <p>Now we make THE BIG circle again divided in half black white</p>
+        <div class="circleNOANIM"></div>
+    </div>
+    <div class="childFlex">
+        <p>Then we place the mini two times on it</p>
+        <div class="circleNOANIM">
+            <div class="yinyangNOANIM"></div>
+            <div class="yinyangNOANIM"></div>
+        </div>
+    </div>
+    <div class="childFlex">
+        <p>Add the animation <code> animation: roll 10s infinite; </code> & <code>@keyframes roll {
+            from {
+            transform:rotate(0deg);
+            }
+            to {
+            transform:rotate(-360deg);
+            }
+            }</code> and...</p>
+        <div class="circlered">
+            <div class="yinyangred"></div>
+            <div class="yinyangred"></div>
+        </div>
+    </div>
+    <div class="childFlex">
+        <p>VOILA!</p>
+        <div class="circle">
+            <div class="yinyang"></div>
+            <div class="yinyang"></div>
+        </div>
+    </div>
 
 </div>
 
